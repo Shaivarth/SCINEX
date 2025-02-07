@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCINEX - Report & Verify Scams</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SCINEX</h1>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="report.html">Report Scam</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="download.html">Download</a>
+            <a href="About.html">About</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <main>
+        <section class="report-section">
+            <h2>Report a Scammer</h2>
+            <p>Help others by reporting known scammer numbers.</p>
+            <input type="text" id="reportNumber" placeholder="Report Scammer's Mobile Number....">
+            <button onclick="reportScammer()">Report</button>
+            <div id="reportMsg"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SCINEX. All rights reserved.</p>
+    </footer>
+
+    <script src="report.js"></script>
+</body>
+</html>

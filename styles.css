@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #000000;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #105232;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    gap: 20px;
+    margin-right: 60px;
+}
+
+nav.show {
+    display: flex;
+}
+
+nav a {
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav b {
+    padding: 10px 25px;
+    background-color: #6bbc1a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav b:hover {
+    color: #000000;
+}
+
+nav a:hover {
+    color: #6bbc1a;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;  /* Align to the right corner */
+    top: 0px;
+    display: flex; /* Hidden on larger screens */
+}
+
+
+/* Verification Section */
+.verification-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+    
+}
+/* Verification Section */
+.report-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 0;
+    
+}
+#searchInput {
+    padding: 15px;
+    width: 70%;
+    max-width: 400px;
+    margin: 15px 0;
+    border: 2px solid #6bbc1a;
+    border-radius: 8px;
+}
+
+#reportNumber {
+    padding: 15px;
+    width: 70%;
+    max-width: 400px;
+    margin: 15px 0;
+    border: 2px solid #6bbc1a;
+    border-radius: 8px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #6bbc1a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    color: #000000;
+}
+
+.news-section {
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 10px;
+    margin: 0px;
+    text-align: center;  /* Center the heading */
+}
+
+.news-container {
+    display: flex;               /* Makes items align horizontally */
+    gap: 30px;                   /* Spacing between news items */
+    justify-content: center;     /* Center the items horizontally */
+    flex-wrap: wrap;             /* Allows wrapping on smaller screens */
+}
+
+.news-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;            /* Ensures content stays within rounded corners */
+    display: flex;
+    flex-direction: column;      /* Stack image, title, and text vertically */
+    align-items: center;         /* Center content horizontally */
+}
+
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+
+.news-image {
+    width: 100%;                 /* Full width of the news-item box */
+    height: 150px;               /* Fixed height for uniformity */
+    object-fit: fill;           /* Ensures the image fills the space without distortion */
+    border-radius: 10px 10px 0 0; /* Curved top corners only */
+}
+
+.news-item h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.news-item p {
+    margin: 20;
+    color: #34495e;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #34495e;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 150px;
+    }
+
+    nav a {
+        padding: 10px 0;
+        color: #ecf0f1;
+    }
+
+    /* Show menu icon on smaller screens */
+    .menu-icon {
+        display: block;
+    }
+
+    nav.show {
+        display: flex;
+    }
+}
