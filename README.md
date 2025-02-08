@@ -6,4 +6,4 @@ SCINEX is an advanced cybersecurity solution that helps individuals verify the a
 
 In addition to verification, SCINEX allows users to report suspicious numbers, building a growing list of reported scammers. When a number is searched, SCINEX not only flags it as "Not Verified" but also alerts the user if it has been previously reported as a scammer, offering an extra layer of protection.
 
-SCINEX is more than just a verification tool—it’s a proactive defense system that empowers people to stay informed, report threats, and protect themselves from the increasing dangers of impersonation fraud in the digital world.
+SCINEX is more than just a verification tool—it’s a proactive defense system that empowers people to stay informed, report threats, and protect themselves from the increasing dangers of impersonation fraud in the digital world. 
